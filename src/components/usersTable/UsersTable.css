@@ -1,0 +1,39 @@
+.table {
+    border: 1px #EBEDF3;
+    background: #FFFFFF;
+    width: 65%;
+    min-width: 700px;
+}
+
+.table-title {
+    display: flex;
+    align-items: center;
+    padding-left: 26px;
+    height: 55px;
+}
+
+.table-title > div {
+    width: 20%;
+}
+
+.table-line > p {
+    width: 20%;
+}
+
+
+
+.table-line {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding-left: 26px;
+    margin-bottom: 2px;
+}
+
+.table-body :last-child {
+    margin-bottom: 0;
+}
+
+.table-footer {
+    height: 78px;
+}
