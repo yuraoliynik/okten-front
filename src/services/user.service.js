@@ -21,13 +21,13 @@ const createUser = (dataUserObj) => async (dispatch) => {
 };
 
 const updateUser = (userId, dataUserObj) => async (dispatch) => {
-    const response = await myAxios.post(`${usersURL}/${userId}`, dataUserObj);
+    const response = await myAxios.put(`${usersURL}/${userId}`, dataUserObj);
 
     dispatch(actionUpdateUser(response.data));
 };
 
 const deleteUser = (userId) => async (dispatch) => {
-    const response = await myAxios.post(`${usersURL}/${userId}`);
+    const response = await myAxios.delete(`${usersURL}/${userId}`);
 
     if (response.status === 204) {
         dispatch(actionDeleteUser(userId));

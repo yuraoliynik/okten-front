@@ -6,7 +6,7 @@ import UserLine from '../userLine/UserLine';
 
 function UsersTable() {
     const users = useSelector(({users}) => users);
-    console.log(users);
+
     return (
         <div className={'table'}>
             <div className={'table-title'}>

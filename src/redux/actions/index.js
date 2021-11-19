@@ -1,28 +1,49 @@
 import {
     INSERT_USERS,
-    CLEAR_USERS,
     ADD_USER,
     UPDATE_USER,
-    DELETE_USER
+    DELETE_USER,
+
+    INSERT_USER_DATA,
+    CLEAR_USER_DATA,
+
+    INSERT_ERROR_USER_DATA,
+    INSERT_URL
 } from './actionTypes';
 
 import {
     actionInsertUsers,
-    actionClearUsers,
     actionAddUser,
     actionUpdateUser,
-    actionDeleteUser
+    actionDeleteUser,
+
+    actionInsertUserData,
+    actionClearUserData,
+
+    actionInsertErrorUserData,
+    actionInsertURL
 } from './actions';
 
 export {
     INSERT_USERS,
-    CLEAR_USERS,
     ADD_USER,
     UPDATE_USER,
     DELETE_USER,
+
+    INSERT_USER_DATA,
+    CLEAR_USER_DATA,
+
+    INSERT_ERROR_USER_DATA,
+    INSERT_URL,
+
     actionInsertUsers,
-    actionClearUsers,
     actionAddUser,
     actionUpdateUser,
-    actionDeleteUser
+    actionDeleteUser,
+
+    actionInsertUserData,
+    actionClearUserData,
+
+    actionInsertErrorUserData,
+    actionInsertURL
 };

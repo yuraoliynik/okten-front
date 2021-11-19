@@ -1,0 +1,20 @@
+.userList {
+    padding: 185px 46px 0;
+    width: 65%;
+    min-width: 700px;
+}
+
+.button-create {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 16px;
+}
+
+.data-wrap {
+    display: flex;
+}
+
+.button-create, .table {
+    width: 65%;
+    min-width: 700px;
+}
