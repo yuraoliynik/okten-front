@@ -3,7 +3,7 @@ import './UserLine.css';
 import {useHistory} from 'react-router-dom';
 import {useDispatch, useSelector} from "react-redux";
 
-import  {actionInsertUserData} from '../../redux/actions';
+import {actionInsertUserData} from '../../redux/actions';
 
 function UserLine({user}) {
     const {

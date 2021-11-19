@@ -10,4 +10,40 @@ html {
 
 body {
   background: #EEF0F8;
+  color: #3F4254;
+  font-size: 13px;
+}
+
+.button_style__blue {
+  width: 120px;
+  height: 46px;
+  color: #FFFFFF;
+  font-size: 14px;
+  background: #2E8FF0;
+  box-shadow: 0 5px 8px #2E8FF029;
+  border: unset;
+  border-radius: 6px;
+}
+
+.button_style__red {
+  width: 120px;
+  height: 46px;
+  color: #FFFFFF;
+  font-size: 14px;
+  background: #F44682;
+  box-shadow: 0 5px 8px #F4468229;
+  border: unset;
+  border-radius: 6px;
+}
+
+.form-wrap {
+  width: 450px;
+  padding: 26px;
+}
+
+.element_style {
+  background: #FFFFFF;
+  box-shadow: 0 0 30px #523F690D;
+  border: 1px solid #EBEDF3;
+  border-radius: 6px;
 }

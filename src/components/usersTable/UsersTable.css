@@ -1,8 +1,3 @@
-.table {
-    border: 1px #EBEDF3;
-    background: #FFFFFF;
-}
-
 .table-title {
     display: flex;
     align-items: center;
@@ -12,13 +7,14 @@
 
 .table-title > div {
     width: 20%;
+    color: #A4A4B5;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .table-line > p {
     width: 20%;
 }
-
-
 
 .table-line {
     display: flex;

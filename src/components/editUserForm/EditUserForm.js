@@ -1,38 +1,23 @@
+import './EditUserForm.css';
+
 import {useDispatch, useSelector} from 'react-redux';
 
 import UserForm from '../userForm/UserForm';
-
-import {
-    updateUser,
-    deleteUser
-} from '../../services/user.service';
+import {deleteUser} from '../../services/user.service';
 
 function EditUserForm(props) {
-    const {history} = props;
+    const {history, userCreateOrEdit} = props;
 
     const {
         userData: editUserData,
+        errorUserData,
         homeURL
     } = useSelector(state => state);
 
     const dispatch = useDispatch();
 
     const handleClickSave = () => {
-        const {
-            _id: userId,
-            password,
-            repeat_password,
-            ...userDataForUpdate
-        } = editUserData;
-
-        const isPasswordChange = (password === repeat_password) &&
-            (password !== '********')
-
-        if (isPasswordChange) {
-            userDataForUpdate.password = password;
-        }
-
-        dispatch(updateUser(userId, userDataForUpdate));
+        userCreateOrEdit(editUserData, errorUserData, homeURL, 0);
     };
 
     const handleClickDelete = () => {
@@ -42,13 +27,21 @@ function EditUserForm(props) {
     };
 
     return (
-        <div className={'userList'}>
+        <div className={'form-wrap element_style'}>
+            <div className={'form-title'}>
+                {editUserData.first_name} {editUserData.last_name}
+            </div>
+
             <UserForm/>
 
             <div className={'button-block'}>
-                <button onClick={handleClickDelete}>Delete</button>
+                <div>
+                    <button onClick={handleClickDelete} className={'button_style__red'}>Delete</button>
+                </div>
 
-                <button onClick={handleClickSave}>Save</button>
+                <div>
+                    <button onClick={handleClickSave} className={'button_style__blue'}>Save</button>
+                </div>
             </div>
         </div>
     );

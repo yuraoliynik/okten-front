@@ -8,7 +8,7 @@ function UsersTable() {
     const users = useSelector(({users}) => users);
 
     return (
-        <div className={'table'}>
+        <div className={'table element_style'}>
             <div className={'table-title'}>
                 <div>USERNAME</div>
                 <div>FIRST_NAME</div>

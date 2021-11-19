@@ -1,7 +1,5 @@
 .userList {
-    padding: 185px 46px 0;
-    width: 65%;
-    min-width: 700px;
+    padding: 0 46px;
 }
 
 .button-create {
@@ -12,9 +10,15 @@
 
 .data-wrap {
     display: flex;
+    justify-content: space-between;
 }
 
-.button-create, .table {
-    width: 65%;
-    min-width: 700px;
+.table {
+    width: 950px;
+}
+
+.form-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }

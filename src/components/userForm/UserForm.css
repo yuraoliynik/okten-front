@@ -2,3 +2,39 @@
     display: flex;
     flex-flow: column;
 }
+
+.input-wrap {
+    display: flex;
+    flex-flow: column;
+    height: 85px;
+}
+
+.input {
+    height: 46px;
+    background: #F3F6F9;
+    border: none;
+    outline:none;
+    border-radius: 6px;
+    padding-left: 16px;
+    font-size: 13px;
+    color: #3F4254;
+}
+
+.select {
+    height: 46px;
+    background: #F3F6F9;
+    border: none;
+    outline:none;
+    border-radius: 6px;
+    padding-left: 16px;
+    font-size: 13px;
+    color: #3F4254;
+}
+
+.error-msg_style {
+    color: #EF7DA0;
+}
+
+.error-border_style {
+    border: 1px solid #EF7DA0;
+}
